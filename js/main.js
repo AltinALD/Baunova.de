@@ -1,4 +1,4 @@
-/* MEISTERWERK — vanilla JS: i18n, nav, form */
+/* BAUNOVA — vanilla JS: i18n, nav, form */
 
 const translations = {
   de: {
@@ -7,56 +7,56 @@ const translations = {
     "nav.process": "Ablauf",
     "nav.contact": "Kontakt",
     "nav.cta": "Angebot anfragen",
-    "hero.eyebrow": "Stuttgart · Handwerk mit Präzision",
-    "hero.title": "Meisterhafte Qualität für Ihr Bau- & Sanierungsprojekt",
+    "hero.eyebrow": "Stuttgart · Maler & Stuckateur",
+    "hero.title": "Farbe, Oberfläche und Präzision — das ist BAUNOVA",
     "hero.lead":
-      "Trockenbau, Fassaden und Dämmung — sauber ausgeführt, termintreu und mit dem Anspruch eines echten Meisterwerks.",
+      "Professionelle Maler- und Stuckateurarbeiten für Innen und Außen — sauber, termintreu und mit dem Anspruch moderner Handwerkskunst.",
     "hero.cta1": "Kostenlos beraten lassen",
     "hero.cta2": "Unsere Leistungen",
-    "hero.b1": "Fachbetrieb",
-    "hero.b2": "Termintreu",
-    "hero.b3": "Saubere Baustelle",
+    "hero.b1": "Malerarbeiten",
+    "hero.b2": "Stuckateur",
+    "hero.b3": "Fassade & Innen",
     "services.eyebrow": "Leistungen",
-    "services.title": "Trockenbau · Fassaden · Dämmung",
+    "services.title": "Maler · Stuckateur · Fassade",
     "services.lead":
-      "Drei Kernkompetenzen — ein Anspruch: präzise Planung, saubere Ausführung und Ergebnisse, die halten.",
-    "services.t1.title": "Trockenbau",
+      "Drei Stärken — ein Standard: sorgfältige Vorbereitung, saubere Ausführung und Oberflächen, die begeistern.",
+    "services.t1.title": "Malerarbeiten",
     "services.t1.text":
-      "Ständerwände, Decken, Vorsatzschalen und Raumaufteilungen — passgenau, schallschutzoptimiert und montagefertig.",
-    "services.t1.li1": "Trennwände & Decken",
-    "services.t1.li2": "Brand- & Schallschutz",
-    "services.t1.li3": "Renovierung & Umbau",
-    "services.t2.title": "Fassaden",
+      "Innenanstriche, Spachteln, Lackierarbeiten und kreative Wandgestaltung — präzise, farbstark und langlebig.",
+    "services.t1.li1": "Wand- & Deckenanstrich",
+    "services.t1.li2": "Spachtel- & Glätttechnik",
+    "services.t1.li3": "Renovierung & Neuanstrich",
+    "services.t2.title": "Stuckateurarbeiten",
     "services.t2.text":
-      "Moderne Fassadenlösungen für Schutz, Optik und Wertbeständigkeit — vom Einfamilienhaus bis zum Gewerbeobjekt.",
-    "services.t2.li1": "Fassadenverkleidung",
-    "services.t2.li2": "Sanierung & Erneuerung",
-    "services.t2.li3": "Wetterfeste Systeme",
-    "services.t3.title": "Dämmung",
+      "Verputz, Glattputz und Oberflächentechnik — von der Untergrundvorbereitung bis zur fertigen Struktur.",
+    "services.t2.li1": "Innen- & Außenputz",
+    "services.t2.li2": "Glattputz & Feinputz",
+    "services.t2.li3": "Reparatur & Sanierung",
+    "services.t3.title": "Fassadengestaltung",
     "services.t3.text":
-      "Energieeffiziente Dämmung für Wand, Decke und Dach — spürbar weniger Verbrauch, mehr Wohnkomfort.",
-    "services.t3.li1": "Innen- & Außendämmung",
-    "services.t3.li2": "Wärmeschutz",
-    "services.t3.li3": "Energieeinsparung",
+      "Wetterfeste Fassadenanstriche und Schutzsysteme — für Optik, Werterhalt und langfristigen Schutz.",
+    "services.t3.li1": "Fassadenanstrich",
+    "services.t3.li2": "Schutz & Imprägnierung",
+    "services.t3.li3": "Farbkonzepte außen",
     "about.eyebrow": "Über uns",
-    "about.title": "Handwerk, dem Sie vertrauen können",
+    "about.title": "Handwerk, das Farbe und Form verbindet",
     "about.p1":
-      "MEISTERWERK steht für sorgfältige Ausführung und klare Kommunikation. Wir verbinden deutsche Präzision mit leidenschaftlichem Handwerk — für Projekte, die überzeugen.",
+      "BAUNOVA steht für moderne Maler- und Stuckateurarbeit mit klarer Kommunikation und sichtbarer Qualität — vom ersten Anstrich bis zur fertigen Oberfläche.",
     "about.p2":
-      "Unter der Leitung von Artur Plaku realisieren wir Neubau- und Sanierungsarbeiten in und um Stuttgart — zuverlässig, fair und mit Blick auf jedes Detail.",
+      "Unter der Leitung von Artur Plaku realisieren wir Projekte in und um Stuttgart — zuverlässig, fair und mit Liebe zum Detail.",
     "about.s1": "Einsatz & Sorgfalt",
     "about.s2": "Kernleistungen",
     "about.s3": "Standort Stuttgart",
     "process.eyebrow": "Ablauf",
     "process.title": "So arbeiten wir",
     "process.1.title": "Beratung",
-    "process.1.text": "Wir hören zu, prüfen vor Ort und klären Anforderungen, Budget und Zeitplan.",
+    "process.1.text": "Wir hören zu, prüfen vor Ort und klären Farben, Materialien, Budget und Zeitplan.",
     "process.2.title": "Angebot",
     "process.2.text": "Sie erhalten ein klares, nachvollziehbares Angebot — ohne Überraschungen.",
     "process.3.title": "Umsetzung",
     "process.3.text": "Saubere Baustelle, fachgerechte Ausführung und regelmäßige Updates für Sie.",
     "process.4.title": "Übergabe",
-    "process.4.text": "Gemeinsame Abnahme und ein Ergebnis, das den Namen MEISTERWERK verdient.",
+    "process.4.text": "Gemeinsame Abnahme und Oberflächen, die den Namen BAUNOVA verdienen.",
     "contact.eyebrow": "Kontakt",
     "contact.title": "Projekt anfragen",
     "contact.lead":
@@ -71,99 +71,102 @@ const translations = {
     "form.phone": "Telefon",
     "form.service": "Leistung",
     "form.message": "Nachricht *",
-    "form.opt1": "Trockenbau",
-    "form.opt2": "Fassaden",
-    "form.opt3": "Dämmung",
+    "form.opt1": "Malerarbeiten",
+    "form.opt2": "Stuckateurarbeiten",
+    "form.opt3": "Fassadengestaltung",
     "form.opt4": "Kombiniert / Sonstiges",
     "form.submit": "Nachricht senden",
     "form.note": "Mit dem Absenden stimmen Sie der Kontaktaufnahme zu.",
     "form.success":
       "Danke! Ihre Anfrage wurde vorbereitet — Ihr E-Mail-Programm öffnet sich gleich.",
-    "footer.tag": "Ihr Partner für Bau & Sanierung",
+    "footer.tag": "Maler und Stuckateur",
+    "call.fab": "Anrufen",
   },
-  sq: {
-    "nav.services": "Shërbimet",
-    "nav.about": "Rreth nesh",
-    "nav.process": "Procesi",
-    "nav.contact": "Kontakt",
-    "nav.cta": "Kërko ofertë",
-    "hero.eyebrow": "Stuttgart · Zejtari me saktësi",
-    "hero.title": "Cilësi mjeshtri për projektin tuaj të ndërtimit & rinovimit",
+  en: {
+    "nav.services": "Services",
+    "nav.about": "About",
+    "nav.process": "Process",
+    "nav.contact": "Contact",
+    "nav.cta": "Request a quote",
+    "hero.eyebrow": "Stuttgart · Painter & Plasterer",
+    "hero.title": "Color, surface and precision — that is BAUNOVA",
     "hero.lead":
-      "Trockenbau, fasada dhe izolim — ekzekutim i pastër, në afat dhe me standardin e një vepre mjeshtri.",
-    "hero.cta1": "Këshillim falas",
-    "hero.cta2": "Shërbimet tona",
-    "hero.b1": "Firma profesionale",
-    "hero.b2": "Në afat",
-    "hero.b3": "Shesh i pastër",
-    "services.eyebrow": "Shërbimet",
-    "services.title": "Trockenbau · Fasada · Izolim",
+      "Professional painting and plastering for interiors and exteriors — clean, on schedule, and with the standard of modern craftsmanship.",
+    "hero.cta1": "Get a free consultation",
+    "hero.cta2": "Our services",
+    "hero.b1": "Painting",
+    "hero.b2": "Plastering",
+    "hero.b3": "Facade & interior",
+    "services.eyebrow": "Services",
+    "services.title": "Painting · Plastering · Facade",
     "services.lead":
-      "Tri kompetenca kryesore — një standard: planifikim i saktë, ekzekutim i pastër dhe rezultate që zgjasin.",
-    "services.t1.title": "Trockenbau",
+      "Three strengths — one standard: careful preparation, clean execution, and surfaces that impress.",
+    "services.t1.title": "Painting",
     "services.t1.text":
-      "Mure ndarëse, tavane, veshje dhe ndarje hapësirash — me saktësi, mbrojtje akustike dhe gati për montim.",
-    "services.t1.li1": "Mure & tavane",
-    "services.t1.li2": "Mbrojtje zjarri & zëri",
-    "services.t1.li3": "Rinovime & transformime",
-    "services.t2.title": "Fasada",
+      "Interior painting, filling, lacquer work and creative wall design — precise, vivid and long-lasting.",
+    "services.t1.li1": "Wall & ceiling painting",
+    "services.t1.li2": "Filling & smoothing",
+    "services.t1.li3": "Renovation & repainting",
+    "services.t2.title": "Plastering",
     "services.t2.text":
-      "Zgjidhje moderne fasade për mbrojtje, pamje dhe vlerë — nga shtëpia individuale te objekti tregtar.",
-    "services.t2.li1": "Veshje fasade",
-    "services.t2.li2": "Rinovime & përtëritje",
-    "services.t2.li3": "Sisteme rezistente",
-    "services.t3.title": "Izolim",
+      "Plaster, smooth finishes and surface techniques — from substrate preparation to the final structure.",
+    "services.t2.li1": "Interior & exterior plaster",
+    "services.t2.li2": "Smooth & fine plaster",
+    "services.t2.li3": "Repair & restoration",
+    "services.t3.title": "Facade design",
     "services.t3.text":
-      "Izolim eficient energjie për mur, tavan dhe çati — më pak shpenzim, më shumë komfort.",
-    "services.t3.li1": "Izolim brenda & jashtë",
-    "services.t3.li2": "Mbrojtje termike",
-    "services.t3.li3": "Kursim energjie",
-    "about.eyebrow": "Rreth nesh",
-    "about.title": "Zejtari të cilës i besoni",
+      "Weather-resistant facade coatings and protection systems — for appearance, value and lasting protection.",
+    "services.t3.li1": "Facade painting",
+    "services.t3.li2": "Protection & impregnation",
+    "services.t3.li3": "Exterior color concepts",
+    "about.eyebrow": "About us",
+    "about.title": "Craftsmanship that unites color and form",
     "about.p1":
-      "MEISTERWERK qëndron për ekzekutim të kujdesshëm dhe komunikim të qartë. Bashkojmë saktësinë gjermane me zejtari pasionante — për projekte që bindin.",
+      "BAUNOVA stands for modern painting and plastering with clear communication and visible quality — from the first coat to the finished surface.",
     "about.p2":
-      "Nën drejtimin e Artur Plaku realizojmë punime ndërtimi dhe rinovimi në Stuttgart dhe rreth tij — me besueshmëri, drejtësi dhe kujdes për çdo detaj.",
-    "about.s1": "Angazhim & kujdes",
-    "about.s2": "Shërbime kryesore",
-    "about.s3": "Vendndodhja Stuttgart",
-    "process.eyebrow": "Procesi",
-    "process.title": "Si punojmë",
-    "process.1.title": "Këshillim",
-    "process.1.text": "Dëgjojmë, kontrollojmë në vend dhe sqarojmë kërkesat, buxhetin dhe afatin.",
-    "process.2.title": "Oferta",
-    "process.2.text": "Merrni një ofertë të qartë dhe të kuptueshme — pa surpriza.",
-    "process.3.title": "Realizimi",
-    "process.3.text": "Shesh i pastër, punë profesionale dhe përditësime të rregullta për ju.",
-    "process.4.title": "Dorëzimi",
-    "process.4.text": "Pranim i përbashkët dhe rezultat që e meriton emrin MEISTERWERK.",
-    "contact.eyebrow": "Kontakt",
-    "contact.title": "Kërkoni projektin",
+      "Under the leadership of Artur Plaku we deliver projects in and around Stuttgart — reliable, fair and detail-focused.",
+    "about.s1": "Commitment & care",
+    "about.s2": "Core services",
+    "about.s3": "Based in Stuttgart",
+    "process.eyebrow": "Process",
+    "process.title": "How we work",
+    "process.1.title": "Consultation",
+    "process.1.text": "We listen, inspect on site and clarify colors, materials, budget and schedule.",
+    "process.2.title": "Quote",
+    "process.2.text": "You receive a clear, transparent offer — with no surprises.",
+    "process.3.title": "Execution",
+    "process.3.text": "A clean site, professional workmanship and regular updates for you.",
+    "process.4.title": "Handover",
+    "process.4.text": "Joint acceptance and surfaces worthy of the BAUNOVA name.",
+    "contact.eyebrow": "Contact",
+    "contact.title": "Request a project",
     "contact.lead":
-      "Na shkruani — përgjigjemi shpejt me një vlerësim pa detyrim.",
-    "contact.nameLabel": "Personi kontaktues",
-    "contact.addressLabel": "Adresa",
-    "contact.telLabel": "Telefon",
-    "contact.mobileLabel": "Celular",
-    "contact.emailLabel": "E-Mail",
-    "form.name": "Emri *",
-    "form.email": "E-Mail *",
-    "form.phone": "Telefon",
-    "form.service": "Shërbimi",
-    "form.message": "Mesazhi *",
-    "form.opt1": "Trockenbau",
-    "form.opt2": "Fasada",
-    "form.opt3": "Izolim",
-    "form.opt4": "I kombinuar / Tjetër",
-    "form.submit": "Dërgo mesazhin",
-    "form.note": "Duke dërguar, pranoni që ju kontaktojmë.",
+      "Write to us — we reply quickly with a non-binding assessment.",
+    "contact.nameLabel": "Contact person",
+    "contact.addressLabel": "Address",
+    "contact.telLabel": "Phone",
+    "contact.mobileLabel": "Mobile",
+    "contact.emailLabel": "Email",
+    "form.name": "Name *",
+    "form.email": "Email *",
+    "form.phone": "Phone",
+    "form.service": "Service",
+    "form.message": "Message *",
+    "form.opt1": "Painting",
+    "form.opt2": "Plastering",
+    "form.opt3": "Facade design",
+    "form.opt4": "Combined / Other",
+    "form.submit": "Send message",
+    "form.note": "By submitting, you agree to be contacted.",
     "form.success":
-      "Faleminderit! Kërkesa u përgatit — programi juaj i e-mailit hapet tani.",
-    "footer.tag": "Partneri juaj për ndërtim & rinovim",
+      "Thank you! Your request is ready — your email app will open next.",
+    "footer.tag": "Painter and Plasterer",
+    "call.fab": "Call now",
   },
 };
 
-let currentLang = localStorage.getItem("mw-lang") || "de";
+let currentLang = localStorage.getItem("bn-lang") || "de";
+if (currentLang !== "de" && currentLang !== "en") currentLang = "de";
 
 function applyTranslations(lang) {
   const dict = translations[lang] || translations.de;
@@ -181,7 +184,7 @@ function applyTranslations(lang) {
   });
 
   currentLang = lang;
-  localStorage.setItem("mw-lang", lang);
+  localStorage.setItem("bn-lang", lang);
 }
 
 function initLang() {
@@ -242,22 +245,22 @@ function initForm() {
 
     const serviceLabel = service.options[service.selectedIndex].text;
     const subject =
-      currentLang === "sq"
-        ? `Kërkesë MEISTERWERK — ${serviceLabel}`
-        : `Anfrage MEISTERWERK — ${serviceLabel}`;
+      currentLang === "en"
+        ? `BAUNOVA inquiry — ${serviceLabel}`
+        : `Anfrage BAUNOVA — ${serviceLabel}`;
 
     const body = [
-      currentLang === "sq" ? "Përshëndetje," : "Guten Tag,",
+      currentLang === "en" ? "Hello," : "Guten Tag,",
       "",
-      `${currentLang === "sq" ? "Emri" : "Name"}: ${name.value.trim()}`,
-      `E-Mail: ${email.value.trim()}`,
-      `${currentLang === "sq" ? "Telefon" : "Telefon"}: ${phone.value.trim() || "-"}`,
-      `${currentLang === "sq" ? "Shërbimi" : "Leistung"}: ${serviceLabel}`,
+      `Name: ${name.value.trim()}`,
+      `Email: ${email.value.trim()}`,
+      `${currentLang === "en" ? "Phone" : "Telefon"}: ${phone.value.trim() || "-"}`,
+      `${currentLang === "en" ? "Service" : "Leistung"}: ${serviceLabel}`,
       "",
       message.value.trim(),
     ].join("\n");
 
-    const mailto = `mailto:info@li-trockenbau.de?subject=${encodeURIComponent(
+    const mailto = `mailto:info@baunova.de?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
@@ -267,8 +270,68 @@ function initForm() {
   });
 }
 
+function initPreloader() {
+  const preloader = document.getElementById("preloader");
+  const fill = document.getElementById("preloaderFill");
+  const pct = document.getElementById("preloaderPct");
+  if (!preloader || !fill || !pct) {
+    document.body.classList.remove("is-loading");
+    return;
+  }
+
+  const minTime = 2200;
+  const started = performance.now();
+  let progress = 0;
+  let finished = false;
+
+  const tick = setInterval(() => {
+    if (finished) return;
+    progress = Math.min(progress + Math.random() * 11 + 3, 92);
+    fill.style.width = `${progress}%`;
+    fill.parentElement.setAttribute("aria-valuenow", String(Math.round(progress)));
+    pct.textContent = `${Math.round(progress)}%`;
+  }, 120);
+
+  const finish = () => {
+    if (finished) return;
+    finished = true;
+    clearInterval(tick);
+
+    const wait = Math.max(0, minTime - (performance.now() - started));
+    setTimeout(() => {
+      fill.style.width = "100%";
+      fill.parentElement.setAttribute("aria-valuenow", "100");
+      pct.textContent = "100%";
+
+      setTimeout(() => {
+        preloader.classList.add("is-done");
+        preloader.setAttribute("aria-busy", "false");
+        document.body.classList.remove("is-loading");
+        setTimeout(() => preloader.remove(), 800);
+      }, 280);
+    }, wait);
+  };
+
+  if (document.readyState === "complete") finish();
+  else window.addEventListener("load", finish, { once: true });
+}
+
 document.getElementById("year").textContent = String(new Date().getFullYear());
 
+function initCallFab() {
+  const fab = document.getElementById("callFab");
+  if (!fab) return;
+
+  const onScroll = () => {
+    fab.classList.toggle("is-visible", window.scrollY > 320);
+  };
+
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+}
+
+initPreloader();
 initLang();
 initNav();
 initForm();
+initCallFab();
