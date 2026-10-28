@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="is-loading">
+<body class="is-loading" data-page="home">
   <div class="preloader" id="preloader" aria-busy="true" aria-live="polite">
     <div class="preloader-bg" aria-hidden="true">
       <span class="orb orb-a"></span>
@@ -33,15 +33,15 @@
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="BAUNOVA">
+      <a class="brand" href="index.html" aria-label="BAUNOVA">
         <img src="assets/img/logo-baunova-clean.jpg" alt="BAUNOVA Logo" class="brand-logo" width="160" height="120" />
       </a>
 
       <nav class="nav" id="nav" aria-label="Hauptnavigation">
-        <a href="#leistungen" data-i18n="nav.services">Leistungen</a>
-        <a href="#ueber-uns" data-i18n="nav.about">Über uns</a>
-        <a href="#ablauf" data-i18n="nav.process">Ablauf</a>
-        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+        <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+        <a href="arbeiten.html" data-i18n="nav.work">Unsere Arbeiten</a>
+        <a href="index.html#ueber-uns" data-i18n="nav.about">Über uns</a>
+        <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
       </nav>
 
       <div class="header-actions">
@@ -49,7 +49,7 @@
           <button type="button" class="lang-btn is-active" data-lang="de" aria-pressed="true">DE</button>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-        <a class="btn btn-primary header-cta" href="#kontakt" data-i18n="nav.cta">Angebot anfragen</a>
+        <a class="btn btn-primary header-cta" href="index.html#kontakt" data-i18n="nav.cta">Angebot anfragen</a>
         <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Menü">
           <span></span><span></span><span></span>
         </button>
@@ -59,8 +59,10 @@
 
   <main>
     <section class="hero">
-      <div class="hero-media">
+      <div class="hero-media hero-slider" id="heroSlider">
+        <img class="is-active" src="assets/img/1000104828.jpg" alt="BAUNOVA Maler bei der Arbeit — echte Baustelle" />
         <img src="assets/img/hero-baunova.jpg" alt="BAUNOVA Team bei Malerarbeiten" />
+        <img src="assets/img/1000104811.jpg" alt="Fertiger Innenraum mit großen Fensterflächen" />
         <div class="hero-overlay"></div>
       </div>
       <div class="container hero-content">
@@ -71,7 +73,7 @@
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#kontakt" data-i18n="hero.cta1">Kostenlos beraten lassen</a>
-          <a class="btn btn-ghost" href="#leistungen" data-i18n="hero.cta2">Unsere Leistungen</a>
+          <a class="btn btn-ghost" href="arbeiten.html" data-i18n="hero.cta2">Unsere Arbeiten</a>
         </div>
         <ul class="hero-badges" aria-label="Highlights">
           <li data-i18n="hero.b1">Malerarbeiten</li>
@@ -143,14 +145,53 @@
             </div>
           </article>
         </div>
+        <div class="section-cta">
+          <a class="btn btn-primary" href="leistungen.html" data-i18n="services.more">Alle Leistungen ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="arbeiten">
+      <div class="container">
+        <div class="section-head section-head-row">
+          <div>
+            <p class="eyebrow" data-i18n="work.eyebrow">Unsere Arbeiten</p>
+            <h2 data-i18n="work.title">Echte Projekte. Echte Baustellen.</h2>
+            <p class="section-lead" data-i18n="work.lead">
+              Einblicke in aktuelle und abgeschlossene Arbeiten — Fassade, Innenausbau und Malerarbeiten.
+            </p>
+          </div>
+          <a class="btn btn-dark" href="arbeiten.html" data-i18n="work.all">Zur Galerie</a>
+        </div>
+
+        <div class="gallery-grid gallery-preview">
+          <button type="button" class="gallery-item gallery-item--lg" data-gallery-src="assets/img/1000104828.jpg" data-gallery-alt="Malerarbeiten auf der Baustelle">
+            <img src="assets/img/1000104828.jpg" alt="Malerarbeiten auf der Baustelle" loading="lazy" />
+          </button>
+          <button type="button" class="gallery-item" data-gallery-src="assets/img/1000104811.jpg" data-gallery-alt="Innenraum mit großen Fensterflächen">
+            <img src="assets/img/1000104811.jpg" alt="Innenraum mit großen Fensterflächen" loading="lazy" />
+          </button>
+          <button type="button" class="gallery-item" data-gallery-src="assets/img/1000104807.jpg" data-gallery-alt="Fassade und Fensterdetail">
+            <img src="assets/img/1000104807.jpg" alt="Fassade und Fensterdetail" loading="lazy" />
+          </button>
+          <button type="button" class="gallery-item" data-gallery-src="assets/img/1000104827.jpg" data-gallery-alt="Außenputz und Fassadenfläche">
+            <img src="assets/img/1000104827.jpg" alt="Außenputz und Fassadenfläche" loading="lazy" />
+          </button>
+          <button type="button" class="gallery-item" data-gallery-src="assets/img/1000104831.jpg" data-gallery-alt="Innenausbau in Arbeit">
+            <img src="assets/img/1000104831.jpg" alt="Innenausbau in Arbeit" loading="lazy" />
+          </button>
+          <button type="button" class="gallery-item" data-gallery-src="assets/img/1000104808.jpg" data-gallery-alt="Projektausschnitt BAUNOVA">
+            <img src="assets/img/1000104808.jpg" alt="Projektausschnitt BAUNOVA" loading="lazy" />
+          </button>
+        </div>
       </div>
     </section>
 
     <section class="about" id="ueber-uns">
       <div class="container about-grid">
         <div class="about-media">
-          <img src="assets/img/about-team-baunova.jpg" alt="BAUNOVA Team mit Firmenlogo auf Arbeitskleidung" loading="lazy" />
-          <img src="assets/img/logo-baunova.jpg" alt="BAUNOVA Logo" class="about-media-secondary" loading="lazy" />
+          <img src="assets/img/1000104811.jpg" alt="Fertiger Innenraum — BAUNOVA Projekt" loading="lazy" />
+          <img src="assets/img/about-team-baunova.jpg" alt="BAUNOVA Team" class="about-media-secondary" loading="lazy" />
         </div>
         <div class="about-copy">
           <p class="eyebrow" data-i18n="about.eyebrow">Über uns</p>
@@ -287,12 +328,24 @@
         <img src="assets/img/logo-baunova-clean.jpg" alt="BAUNOVA" width="120" height="90" />
         <p data-i18n="footer.tag">Maler und Stuckateur</p>
       </div>
+      <div class="footer-links">
+        <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+        <a href="arbeiten.html" data-i18n="nav.work">Unsere Arbeiten</a>
+        <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+      </div>
       <div class="footer-meta">
         <p>© <span id="year"></span> BAUNOVA</p>
         <p>Maler · Stuckateur · Fassade</p>
       </div>
     </div>
   </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img src="" alt="" id="lightboxImg" />
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+  </div>
 
   <a
     href="tel:+4917673820104"

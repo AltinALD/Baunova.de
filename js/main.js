@@ -3,6 +3,7 @@
 const translations = {
   de: {
     "nav.services": "Leistungen",
+    "nav.work": "Unsere Arbeiten",
     "nav.about": "Über uns",
     "nav.process": "Ablauf",
     "nav.contact": "Kontakt",
@@ -12,7 +13,7 @@ const translations = {
     "hero.lead":
       "Professionelle Maler- und Stuckateurarbeiten für Innen und Außen — sauber, termintreu und mit dem Anspruch moderner Handwerkskunst.",
     "hero.cta1": "Kostenlos beraten lassen",
-    "hero.cta2": "Unsere Leistungen",
+    "hero.cta2": "Unsere Arbeiten",
     "hero.b1": "Malerarbeiten",
     "hero.b2": "Stuckateur",
     "hero.b3": "Fassade & Innen",
@@ -20,6 +21,22 @@ const translations = {
     "services.title": "Maler · Stuckateur · Fassade",
     "services.lead":
       "Drei Stärken — ein Standard: sorgfältige Vorbereitung, saubere Ausführung und Oberflächen, die begeistern.",
+    "services.more": "Alle Leistungen ansehen",
+    "services.pageTitle": "Was wir für Sie umsetzen",
+    "services.pageLead":
+      "Malerarbeiten, Stuckateurarbeiten und Fassadengestaltung — präzise, sauber und termintreu.",
+    "services.ctaTitle": "Bereit für Ihr Projekt?",
+    "services.ctaText": "Fordern Sie jetzt unverbindlich ein Angebot an.",
+    "work.eyebrow": "Unsere Arbeiten",
+    "work.title": "Echte Projekte. Echte Baustellen.",
+    "work.lead":
+      "Einblicke in aktuelle und abgeschlossene Arbeiten — Fassade, Innenausbau und Malerarbeiten.",
+    "work.all": "Zur Galerie",
+    "work.pageTitle": "Galerie unserer Projekte",
+    "work.pageLead":
+      "Originale Baustellenfotos — Fassaden, Innenräume und Malerarbeiten aus echten Projekten.",
+    "work.ctaTitle": "Ihr Projekt als Nächstes?",
+    "work.ctaText": "Sprechen Sie uns an — wir freuen uns auf Ihre Anfrage.",
     "services.t1.title": "Malerarbeiten",
     "services.t1.text":
       "Innenanstriche, Spachteln, Lackierarbeiten und kreative Wandgestaltung — präzise, farbstark und langlebig.",
@@ -84,6 +101,7 @@ const translations = {
   },
   en: {
     "nav.services": "Services",
+    "nav.work": "Our work",
     "nav.about": "About",
     "nav.process": "Process",
     "nav.contact": "Contact",
@@ -93,7 +111,7 @@ const translations = {
     "hero.lead":
       "Professional painting and plastering for interiors and exteriors — clean, on schedule, and with the standard of modern craftsmanship.",
     "hero.cta1": "Get a free consultation",
-    "hero.cta2": "Our services",
+    "hero.cta2": "Our work",
     "hero.b1": "Painting",
     "hero.b2": "Plastering",
     "hero.b3": "Facade & interior",
@@ -101,6 +119,22 @@ const translations = {
     "services.title": "Painting · Plastering · Facade",
     "services.lead":
       "Three strengths — one standard: careful preparation, clean execution, and surfaces that impress.",
+    "services.more": "View all services",
+    "services.pageTitle": "What we deliver for you",
+    "services.pageLead":
+      "Painting, plastering and facade design — precise, clean and on schedule.",
+    "services.ctaTitle": "Ready for your project?",
+    "services.ctaText": "Request a non-binding quote now.",
+    "work.eyebrow": "Our work",
+    "work.title": "Real projects. Real job sites.",
+    "work.lead":
+      "A look at current and completed work — facade, interiors and painting.",
+    "work.all": "Open gallery",
+    "work.pageTitle": "Project gallery",
+    "work.pageLead":
+      "Original job-site photos — facades, interiors and painting from real projects.",
+    "work.ctaTitle": "Your project next?",
+    "work.ctaText": "Get in touch — we look forward to your inquiry.",
     "services.t1.title": "Painting",
     "services.t1.text":
       "Interior painting, filling, lacquer work and creative wall design — precise, vivid and long-lasting.",
@@ -330,8 +364,68 @@ function initCallFab() {
   window.addEventListener("scroll", onScroll, { passive: true });
 }
 
+function initHeroSlider() {
+  const slider = document.getElementById("heroSlider");
+  if (!slider) return;
+  const slides = [...slider.querySelectorAll("img")];
+  if (slides.length < 2) return;
+
+  let index = 0;
+  setInterval(() => {
+    slides[index].classList.remove("is-active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("is-active");
+  }, 4500);
+}
+
+function initGallery() {
+  const items = [...document.querySelectorAll("[data-gallery-src]")];
+  const lightbox = document.getElementById("lightbox");
+  const img = document.getElementById("lightboxImg");
+  const closeBtn = document.getElementById("lightboxClose");
+  const prevBtn = document.getElementById("lightboxPrev");
+  const nextBtn = document.getElementById("lightboxNext");
+  if (!items.length || !lightbox || !img) return;
+
+  let index = 0;
+
+  const openAt = (i) => {
+    index = (i + items.length) % items.length;
+    const item = items[index];
+    img.src = item.getAttribute("data-gallery-src");
+    img.alt = item.getAttribute("data-gallery-alt") || "";
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+  };
+
+  const close = () => {
+    lightbox.hidden = true;
+    img.src = "";
+    document.body.style.overflow = "";
+  };
+
+  items.forEach((item, i) => {
+    item.addEventListener("click", () => openAt(i));
+  });
+
+  closeBtn?.addEventListener("click", close);
+  prevBtn?.addEventListener("click", () => openAt(index - 1));
+  nextBtn?.addEventListener("click", () => openAt(index + 1));
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) close();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (lightbox.hidden) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowLeft") openAt(index - 1);
+    if (e.key === "ArrowRight") openAt(index + 1);
+  });
+}
+
 initPreloader();
 initLang();
 initNav();
 initForm();
 initCallFab();
+initHeroSlider();
+initGallery();
