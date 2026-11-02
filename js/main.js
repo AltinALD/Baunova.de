@@ -8,7 +8,7 @@ const translations = {
     "nav.process": "Ablauf",
     "nav.contact": "Kontakt",
     "nav.cta": "Angebot anfragen",
-    "hero.eyebrow": "Stuttgart · Maler & Stuckateur",
+    "hero.eyebrow": "Heilbronn · Maler & Stuckateur",
     "hero.title": "Farbe, Oberfläche und Präzision — das ist BAUNOVA",
     "hero.lead":
       "Professionelle Maler- und Stuckateurarbeiten für Innen und Außen — sauber, termintreu und mit dem Anspruch moderner Handwerkskunst.",
@@ -60,10 +60,10 @@ const translations = {
     "about.p1":
       "BAUNOVA steht für moderne Maler- und Stuckateurarbeit mit klarer Kommunikation und sichtbarer Qualität — vom ersten Anstrich bis zur fertigen Oberfläche.",
     "about.p2":
-      "Unter der Leitung von Artur Plaku realisieren wir Projekte in und um Stuttgart — zuverlässig, fair und mit Liebe zum Detail.",
+      "Unter der Leitung von Ardit Ademi realisieren wir Projekte in und um Heilbronn — zuverlässig, fair und mit Liebe zum Detail.",
     "about.s1": "Einsatz & Sorgfalt",
     "about.s2": "Kernleistungen",
-    "about.s3": "Standort Stuttgart",
+    "about.s3": "Standort Heilbronn",
     "process.eyebrow": "Ablauf",
     "process.title": "So arbeiten wir",
     "process.1.title": "Beratung",
@@ -79,10 +79,12 @@ const translations = {
     "contact.lead":
       "Schreiben Sie uns — wir melden uns schnell mit einer unverbindlichen Einschätzung.",
     "contact.nameLabel": "Ansprechpartner",
+    "contact.companyLabel": "Firma",
     "contact.addressLabel": "Adresse",
     "contact.telLabel": "Telefon",
     "contact.mobileLabel": "Mobil",
     "contact.emailLabel": "E-Mail",
+    "contact.mapLink": "In Google Maps öffnen",
     "form.name": "Name *",
     "form.email": "E-Mail *",
     "form.phone": "Telefon",
@@ -106,7 +108,7 @@ const translations = {
     "nav.process": "Process",
     "nav.contact": "Contact",
     "nav.cta": "Request a quote",
-    "hero.eyebrow": "Stuttgart · Painter & Plasterer",
+    "hero.eyebrow": "Heilbronn · Painter & Plasterer",
     "hero.title": "Color, surface and precision — that is BAUNOVA",
     "hero.lead":
       "Professional painting and plastering for interiors and exteriors — clean, on schedule, and with the standard of modern craftsmanship.",
@@ -158,10 +160,10 @@ const translations = {
     "about.p1":
       "BAUNOVA stands for modern painting and plastering with clear communication and visible quality — from the first coat to the finished surface.",
     "about.p2":
-      "Under the leadership of Artur Plaku we deliver projects in and around Stuttgart — reliable, fair and detail-focused.",
+      "Under the leadership of Ardit Ademi we deliver projects in and around Heilbronn — reliable, fair and detail-focused.",
     "about.s1": "Commitment & care",
     "about.s2": "Core services",
-    "about.s3": "Based in Stuttgart",
+    "about.s3": "Based in Heilbronn",
     "process.eyebrow": "Process",
     "process.title": "How we work",
     "process.1.title": "Consultation",
@@ -177,10 +179,12 @@ const translations = {
     "contact.lead":
       "Write to us — we reply quickly with a non-binding assessment.",
     "contact.nameLabel": "Contact person",
+    "contact.companyLabel": "Company",
     "contact.addressLabel": "Address",
     "contact.telLabel": "Phone",
     "contact.mobileLabel": "Mobile",
     "contact.emailLabel": "Email",
+    "contact.mapLink": "Open in Google Maps",
     "form.name": "Name *",
     "form.email": "Email *",
     "form.phone": "Phone",
@@ -294,7 +298,7 @@ function initForm() {
       message.value.trim(),
     ].join("\n");
 
-    const mailto = `mailto:info@baunova.de?subject=${encodeURIComponent(
+    const mailto = `mailto:arditademi2105@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
