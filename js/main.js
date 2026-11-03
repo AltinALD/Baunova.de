@@ -8,7 +8,7 @@ const translations = {
     "nav.process": "Ablauf",
     "nav.contact": "Kontakt",
     "nav.cta": "Angebot anfragen",
-    "hero.eyebrow": "Heilbronn · Maler & Stuckateur",
+    "hero.eyebrow": "Böblingen · Maler & Stuckateur",
     "hero.title": "Farbe, Oberfläche und Präzision — das ist BAUNOVA",
     "hero.lead":
       "Professionelle Maler- und Stuckateurarbeiten für Innen und Außen — sauber, termintreu und mit dem Anspruch moderner Handwerkskunst.",
@@ -60,10 +60,10 @@ const translations = {
     "about.p1":
       "BAUNOVA steht für moderne Maler- und Stuckateurarbeit mit klarer Kommunikation und sichtbarer Qualität — vom ersten Anstrich bis zur fertigen Oberfläche.",
     "about.p2":
-      "Unter der Leitung von Ardit Ademi realisieren wir Projekte in und um Heilbronn — zuverlässig, fair und mit Liebe zum Detail.",
+      "Unter der Leitung von Ardit Ademi realisieren wir Projekte in und um Böblingen — zuverlässig, fair und mit Liebe zum Detail.",
     "about.s1": "Einsatz & Sorgfalt",
     "about.s2": "Kernleistungen",
-    "about.s3": "Standort Heilbronn",
+    "about.s3": "Standort Böblingen",
     "process.eyebrow": "Ablauf",
     "process.title": "So arbeiten wir",
     "process.1.title": "Beratung",
@@ -108,7 +108,7 @@ const translations = {
     "nav.process": "Process",
     "nav.contact": "Contact",
     "nav.cta": "Request a quote",
-    "hero.eyebrow": "Heilbronn · Painter & Plasterer",
+    "hero.eyebrow": "Böblingen · Painter & Plasterer",
     "hero.title": "Color, surface and precision — that is BAUNOVA",
     "hero.lead":
       "Professional painting and plastering for interiors and exteriors — clean, on schedule, and with the standard of modern craftsmanship.",
@@ -160,10 +160,10 @@ const translations = {
     "about.p1":
       "BAUNOVA stands for modern painting and plastering with clear communication and visible quality — from the first coat to the finished surface.",
     "about.p2":
-      "Under the leadership of Ardit Ademi we deliver projects in and around Heilbronn — reliable, fair and detail-focused.",
+      "Under the leadership of Ardit Ademi we deliver projects in and around Böblingen — reliable, fair and detail-focused.",
     "about.s1": "Commitment & care",
     "about.s2": "Core services",
-    "about.s3": "Based in Heilbronn",
+    "about.s3": "Based in Böblingen",
     "process.eyebrow": "Process",
     "process.title": "How we work",
     "process.1.title": "Consultation",
