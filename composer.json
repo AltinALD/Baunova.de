@@ -1,0 +1,7 @@
+{
+  "name": "baunova/website",
+  "description": "BAUNOVA Maler und Stuckateur — baunova-maler.de",
+  "require": {
+    "phpmailer/phpmailer": "^6.9"
+  }
+}

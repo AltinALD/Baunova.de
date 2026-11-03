@@ -55,6 +55,11 @@ const translations = {
     "services.t3.li1": "Fassadenanstrich",
     "services.t3.li2": "Schutz & Imprägnierung",
     "services.t3.li3": "Farbkonzepte außen",
+    "office.eyebrow": "Unser Büro",
+    "office.title": "Hier finden Sie uns",
+    "office.text":
+      "Unser Firmensitz in Böblingen — Ihr Ansprechpartner für Malerarbeiten, Stuckateur und Fassadengestaltung vor Ort.",
+    "office.map": "Route planen",
     "about.eyebrow": "Über uns",
     "about.title": "Handwerk, das Farbe und Form verbindet",
     "about.p1":
@@ -96,8 +101,7 @@ const translations = {
     "form.opt4": "Kombiniert / Sonstiges",
     "form.submit": "Nachricht senden",
     "form.note": "Mit dem Absenden stimmen Sie der Kontaktaufnahme zu.",
-    "form.success":
-      "Danke! Ihre Anfrage wurde vorbereitet — Ihr E-Mail-Programm öffnet sich gleich.",
+    "form.success": "Wird gesendet …",
     "footer.tag": "Maler und Stuckateur",
     "call.fab": "Anrufen",
   },
@@ -155,6 +159,11 @@ const translations = {
     "services.t3.li1": "Facade painting",
     "services.t3.li2": "Protection & impregnation",
     "services.t3.li3": "Exterior color concepts",
+    "office.eyebrow": "Our office",
+    "office.title": "Find us here",
+    "office.text":
+      "Our office in Böblingen — your local partner for painting, plastering and facade work.",
+    "office.map": "Get directions",
     "about.eyebrow": "About us",
     "about.title": "Craftsmanship that unites color and form",
     "about.p1":
@@ -196,8 +205,7 @@ const translations = {
     "form.opt4": "Combined / Other",
     "form.submit": "Send message",
     "form.note": "By submitting, you agree to be contacted.",
-    "form.success":
-      "Thank you! Your request is ready — your email app will open next.",
+    "form.success": "Sending …",
     "footer.tag": "Painter and Plasterer",
     "call.fab": "Call now",
   },
@@ -256,12 +264,8 @@ function initForm() {
   if (!form) return;
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
     const name = form.name;
     const email = form.email;
-    const phone = form.phone;
-    const service = form.service;
     const message = form.message;
 
     [name, email, message].forEach((field) => field.classList.remove("is-invalid"));
@@ -279,32 +283,15 @@ function initForm() {
       message.classList.add("is-invalid");
       valid = false;
     }
-    if (!valid) return;
 
-    const serviceLabel = service.options[service.selectedIndex].text;
-    const subject =
-      currentLang === "en"
-        ? `BAUNOVA inquiry — ${serviceLabel}`
-        : `Anfrage BAUNOVA — ${serviceLabel}`;
+    if (!valid) {
+      e.preventDefault();
+      return;
+    }
 
-    const body = [
-      currentLang === "en" ? "Hello," : "Guten Tag,",
-      "",
-      `Name: ${name.value.trim()}`,
-      `Email: ${email.value.trim()}`,
-      `${currentLang === "en" ? "Phone" : "Telefon"}: ${phone.value.trim() || "-"}`,
-      `${currentLang === "en" ? "Service" : "Leistung"}: ${serviceLabel}`,
-      "",
-      message.value.trim(),
-    ].join("\n");
-
-    const mailto = `mailto:arditademi2105@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-
-    success.hidden = false;
-    window.location.href = mailto;
-    form.reset();
+    if (success) success.hidden = false;
+    const btn = form.querySelector('button[type="submit"]');
+    if (btn) btn.disabled = true;
   });
 }
 

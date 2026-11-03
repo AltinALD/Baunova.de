@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unsere Arbeiten — BAUNOVA</title>
-  <meta name="description" content="BAUNOVA Projektgalerie — echte Baustellenfotos: Malerarbeiten, Stuckateur und Fassade." />
+  <title>Unsere Arbeiten — BAUNOVA Maler &amp; Stuckateur Böblingen</title>
+  <meta name="description" content="Projektgalerie von BAUNOVA: echte Baustellenfotos zu Malerarbeiten, Stuckateur und Fassade in Böblingen und Umgebung." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://baunova-maler.de/arbeiten.php" />
+  <meta property="og:title" content="Unsere Arbeiten — BAUNOVA Böblingen" />
+  <meta property="og:description" content="Echte Projekte: Malerarbeiten, Stuckateur und Fassade." />
+  <meta property="og:url" content="https://baunova-maler.de/arbeiten.php" />
+  <meta property="og:image" content="https://baunova-maler.de/assets/img/1000104828.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -13,21 +19,21 @@
 <body data-page="work">
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="BAUNOVA">
+      <a class="brand" href="index.php" aria-label="BAUNOVA">
         <img src="assets/img/logo-baunova-clean.jpg" alt="BAUNOVA Logo" class="brand-logo" width="160" height="120" />
       </a>
       <nav class="nav" id="nav" aria-label="Hauptnavigation">
-        <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
-        <a href="arbeiten.html" class="is-current" data-i18n="nav.work">Unsere Arbeiten</a>
-        <a href="index.html#ueber-uns" data-i18n="nav.about">Über uns</a>
-        <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+        <a href="leistungen.php" data-i18n="nav.services">Leistungen</a>
+        <a href="arbeiten.php" class="is-current" data-i18n="nav.work">Unsere Arbeiten</a>
+        <a href="index.php#ueber-uns" data-i18n="nav.about">Über uns</a>
+        <a href="index.php#kontakt" data-i18n="nav.contact">Kontakt</a>
       </nav>
       <div class="header-actions">
         <div class="lang-switch" role="group" aria-label="Language">
           <button type="button" class="lang-btn is-active" data-lang="de" aria-pressed="true">DE</button>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-        <a class="btn btn-primary header-cta" href="index.html#kontakt" data-i18n="nav.cta">Angebot anfragen</a>
+        <a class="btn btn-primary header-cta" href="index.php#kontakt" data-i18n="nav.cta">Angebot anfragen</a>
         <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Menü">
           <span></span><span></span><span></span>
         </button>
@@ -99,7 +105,7 @@
           <h2 data-i18n="work.ctaTitle">Ihr Projekt als Nächstes?</h2>
           <p data-i18n="work.ctaText">Sprechen Sie uns an — wir freuen uns auf Ihre Anfrage.</p>
         </div>
-        <a class="btn btn-primary" href="index.html#kontakt" data-i18n="nav.cta">Angebot anfragen</a>
+        <a class="btn btn-primary" href="index.php#kontakt" data-i18n="nav.cta">Angebot anfragen</a>
       </div>
     </section>
   </main>
@@ -111,9 +117,9 @@
         <p data-i18n="footer.tag">Maler und Stuckateur</p>
       </div>
       <div class="footer-links">
-        <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
-        <a href="arbeiten.html" data-i18n="nav.work">Unsere Arbeiten</a>
-        <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+        <a href="leistungen.php" data-i18n="nav.services">Leistungen</a>
+        <a href="arbeiten.php" data-i18n="nav.work">Unsere Arbeiten</a>
+        <a href="index.php#kontakt" data-i18n="nav.contact">Kontakt</a>
       </div>
       <div class="footer-meta">
         <p>© <span id="year"></span> BAUNOVA</p>

@@ -732,6 +732,84 @@ h3 {
   color: var(--ink);
 }
 
+/* Office */
+.office {
+  padding: 4.5rem 0;
+  background: #111;
+  color: #fff;
+}
+
+.office-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.office-media img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.office .eyebrow {
+  color: #7eb6ff;
+}
+
+.office-copy p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.office-address {
+  margin: 1.25rem 0 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: #fff !important;
+}
+
+/* Status pages */
+.status-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: var(--bg);
+}
+
+.status-card {
+  width: min(100%, 460px);
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.status-card img {
+  margin: 0 auto 1.25rem;
+  height: 88px;
+  width: auto;
+}
+
+.status-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+}
+
 /* Work gallery */
 .work {
   padding: 4.5rem 0 5rem;
@@ -974,8 +1052,13 @@ h3 {
   }
 
   .about-grid,
-  .contact-grid {
+  .contact-grid,
+  .office-grid {
     grid-template-columns: 1fr;
+  }
+
+  .office-media img {
+    aspect-ratio: 16 / 11;
   }
 
   .about-media-secondary {

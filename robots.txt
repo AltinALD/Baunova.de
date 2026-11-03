@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baunova-maler.de/sitemap.xml
+
+Disallow: /mail-config.php
+Disallow: /mail-config.example.php
+Disallow: /send-email.php
+Disallow: /vendor/
+Disallow: /danke.php
+Disallow: /fehler.php

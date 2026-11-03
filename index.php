@@ -3,8 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BAUNOVA — Maler und Stuckateur</title>
-  <meta name="description" content="BAUNOVA – Maler und Stuckateur in Böblingen. Roßbergstr. 26, 71032 Böblingen. Professional painting, plastering and facade design. DE / EN." />
+  <title>BAUNOVA Maler &amp; Stuckateur Böblingen | Malerarbeiten, Putz &amp; Fassade</title>
+  <meta name="description" content="BAUNOVA – Ihr Maler und Stuckateur in Böblingen. Professionelle Malerarbeiten, Stuckateurarbeiten und Fassadengestaltung. Roßbergstr. 26, 71032 Böblingen. Jetzt Angebot anfragen." />
+  <meta name="keywords" content="Maler Böblingen, Stuckateur Böblingen, Malerarbeiten, Fassadengestaltung, Innenanstrich, Außenputz, BAUNOVA, Malerbetrieb Böblingen, Renovierung" />
+  <meta name="author" content="BAUNOVA — Ardit Ademi" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="geo.region" content="DE-BW" />
+  <meta name="geo.placename" content="Böblingen" />
+  <link rel="canonical" href="https://baunova-maler.de/" />
+  <link rel="alternate" hreflang="de" href="https://baunova-maler.de/" />
+  <link rel="alternate" hreflang="en" href="https://baunova-maler.de/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="BAUNOVA" />
+  <meta property="og:title" content="BAUNOVA — Maler und Stuckateur in Böblingen" />
+  <meta property="og:description" content="Professionelle Maler-, Stuckateur- und Fassadenarbeiten in Böblingen und Umgebung." />
+  <meta property="og:url" content="https://baunova-maler.de/" />
+  <meta property="og:image" content="https://baunova-maler.de/assets/img/baunova-office.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BAUNOVA — Maler und Stuckateur Böblingen" />
+  <meta name="twitter:description" content="Malerarbeiten, Stuckateur und Fassade — präzise, sauber, termintreu." />
+  <meta name="twitter:image" content="https://baunova-maler.de/assets/img/baunova-office.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "BAUNOVA",
+    "alternateName": "BAUNOVA Maler und Stuckateur",
+    "description": "Malerbetrieb und Stuckateur in Böblingen — Malerarbeiten, Putz und Fassadengestaltung.",
+    "url": "https://baunova-maler.de/",
+    "telephone": "+491723796275",
+    "email": "arditademi2105@gmail.com",
+    "image": "https://baunova-maler.de/assets/img/baunova-office.jpg",
+    "logo": "https://baunova-maler.de/assets/img/logo-baunova-clean.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Roßbergstr. 26",
+      "postalCode": "71032",
+      "addressLocality": "Böblingen",
+      "addressRegion": "Baden-Württemberg",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.6800851,
+      "longitude": 9.0205007
+    },
+    "areaServed": ["Böblingen", "Stuttgart", "Sindelfingen", "Baden-Württemberg"],
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "Ardit Ademi"
+    },
+    "sameAs": []
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -33,15 +86,15 @@
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="BAUNOVA">
+      <a class="brand" href="index.php" aria-label="BAUNOVA">
         <img src="assets/img/logo-baunova-clean.jpg" alt="BAUNOVA Logo" class="brand-logo" width="160" height="120" />
       </a>
 
       <nav class="nav" id="nav" aria-label="Hauptnavigation">
-        <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
-        <a href="arbeiten.html" data-i18n="nav.work">Unsere Arbeiten</a>
-        <a href="index.html#ueber-uns" data-i18n="nav.about">Über uns</a>
-        <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+        <a href="leistungen.php" data-i18n="nav.services">Leistungen</a>
+        <a href="arbeiten.php" data-i18n="nav.work">Unsere Arbeiten</a>
+        <a href="index.php#ueber-uns" data-i18n="nav.about">Über uns</a>
+        <a href="index.php#kontakt" data-i18n="nav.contact">Kontakt</a>
       </nav>
 
       <div class="header-actions">
@@ -49,7 +102,7 @@
           <button type="button" class="lang-btn is-active" data-lang="de" aria-pressed="true">DE</button>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-        <a class="btn btn-primary header-cta" href="index.html#kontakt" data-i18n="nav.cta">Angebot anfragen</a>
+        <a class="btn btn-primary header-cta" href="index.php#kontakt" data-i18n="nav.cta">Angebot anfragen</a>
         <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Menü">
           <span></span><span></span><span></span>
         </button>
@@ -60,7 +113,8 @@
   <main>
     <section class="hero">
       <div class="hero-media hero-slider" id="heroSlider">
-        <img class="is-active" src="assets/img/1000104828.jpg" alt="BAUNOVA Maler bei der Arbeit — echte Baustelle" />
+        <img class="is-active" src="assets/img/1000104828.jpg" alt="BAUNOVA Maler bei der Arbeit — echte Baustelle in Böblingen" />
+        <img src="assets/img/baunova-office.jpg" alt="BAUNOVA Büro und Firmensitz in Böblingen" />
         <img src="assets/img/hero-baunova.jpg" alt="BAUNOVA Team bei Malerarbeiten" />
         <img src="assets/img/1000104811.jpg" alt="Fertiger Innenraum mit großen Fensterflächen" />
         <div class="hero-overlay"></div>
@@ -73,7 +127,7 @@
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#kontakt" data-i18n="hero.cta1">Kostenlos beraten lassen</a>
-          <a class="btn btn-ghost" href="arbeiten.html" data-i18n="hero.cta2">Unsere Arbeiten</a>
+          <a class="btn btn-ghost" href="arbeiten.php" data-i18n="hero.cta2">Unsere Arbeiten</a>
         </div>
         <ul class="hero-badges" aria-label="Highlights">
           <li data-i18n="hero.b1">Malerarbeiten</li>
@@ -146,7 +200,7 @@
           </article>
         </div>
         <div class="section-cta">
-          <a class="btn btn-primary" href="leistungen.html" data-i18n="services.more">Alle Leistungen ansehen</a>
+          <a class="btn btn-primary" href="leistungen.php" data-i18n="services.more">Alle Leistungen ansehen</a>
         </div>
       </div>
     </section>
@@ -161,7 +215,7 @@
               Einblicke in aktuelle und abgeschlossene Arbeiten — Fassade, Innenausbau und Malerarbeiten.
             </p>
           </div>
-          <a class="btn btn-dark" href="arbeiten.html" data-i18n="work.all">Zur Galerie</a>
+          <a class="btn btn-dark" href="arbeiten.php" data-i18n="work.all">Zur Galerie</a>
         </div>
 
         <div class="gallery-grid gallery-preview">
@@ -183,6 +237,23 @@
           <button type="button" class="gallery-item" data-gallery-src="assets/img/1000104808.jpg" data-gallery-alt="Projektausschnitt BAUNOVA">
             <img src="assets/img/1000104808.jpg" alt="Projektausschnitt BAUNOVA" loading="lazy" />
           </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="office" id="buero">
+      <div class="container office-grid">
+        <div class="office-media">
+          <img src="assets/img/baunova-office.jpg" alt="BAUNOVA Firmensitz — Maler und Stuckateur in Böblingen" loading="lazy" />
+        </div>
+        <div class="office-copy">
+          <p class="eyebrow" data-i18n="office.eyebrow">Unser Büro</p>
+          <h2 data-i18n="office.title">Hier finden Sie uns</h2>
+          <p data-i18n="office.text">
+            Unser Firmensitz in Böblingen — Ihr Ansprechpartner für Malerarbeiten, Stuckateur und Fassadengestaltung vor Ort.
+          </p>
+          <p class="office-address"><strong>Roßbergstr. 26</strong><br />71032 Böblingen</p>
+          <a class="btn btn-dark" href="https://www.google.com/maps?q=48.6800851,9.0205007" target="_blank" rel="noopener noreferrer" data-i18n="office.map">Route planen</a>
         </div>
       </div>
     </section>
@@ -301,7 +372,8 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm" novalidate>
+        <form class="contact-form" id="contactForm" action="send-email.php" method="post" novalidate>
+          <input type="text" name="website" value="" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true" />
           <div class="form-row">
             <label for="name" data-i18n="form.name">Name *</label>
             <input type="text" id="name" name="name" required autocomplete="name" />
@@ -332,7 +404,7 @@
           <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">Nachricht senden</button>
           <p class="form-note" data-i18n="form.note">Mit dem Absenden stimmen Sie der Kontaktaufnahme zu.</p>
           <p class="form-success" id="formSuccess" hidden data-i18n="form.success">
-            Danke! Ihre Anfrage wurde vorbereitet — Ihr E-Mail-Programm öffnet sich gleich.
+            Wird gesendet …
           </p>
         </form>
       </div>
@@ -346,9 +418,9 @@
         <p data-i18n="footer.tag">Maler und Stuckateur</p>
       </div>
       <div class="footer-links">
-        <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
-        <a href="arbeiten.html" data-i18n="nav.work">Unsere Arbeiten</a>
-        <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+        <a href="leistungen.php" data-i18n="nav.services">Leistungen</a>
+        <a href="arbeiten.php" data-i18n="nav.work">Unsere Arbeiten</a>
+        <a href="index.php#kontakt" data-i18n="nav.contact">Kontakt</a>
       </div>
       <div class="footer-meta">
         <p>© <span id="year"></span> BAUNOVA</p>

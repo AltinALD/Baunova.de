@@ -1,0 +1,19 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Prefer PHP pages
+  RewriteRule ^index\.html$ / [R=301,L]
+  RewriteRule ^leistungen\.html$ /leistungen.php [R=301,L]
+  RewriteRule ^arbeiten\.html$ /arbeiten.php [R=301,L]
+
+  # Block direct access to mail config
+  RewriteRule ^mail-config\.php$ - [F,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
